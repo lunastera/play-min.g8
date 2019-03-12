@@ -4,7 +4,6 @@
 lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
-    name := "play-min",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },

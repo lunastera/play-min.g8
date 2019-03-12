@@ -8,7 +8,7 @@ lazy val root = (project in file("."))
     commonSettings,
     name := "$name$",
     version := "0.0.1",
-    organization := "com.github.sobreera",
+    organization := "$organization$",
     libraryDependencies ++= Seq(
       guice,
       "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.0" % Test

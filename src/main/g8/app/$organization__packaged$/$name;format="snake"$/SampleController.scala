@@ -9,7 +9,7 @@ class SampleController @Inject()(c: ControllerComponents) extends AbstractContro
   def get(name: Option[String]) = Action { implicit request: Request[AnyContent] =>
     Ok {
       name
-        .map(s => s"Hello $s!")
+        .map(s => s"Hello $"$"$s!")
         .getOrElse("""Please give a name as a query parameter named "name".""")
     }
   }

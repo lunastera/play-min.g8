@@ -1,6 +1,6 @@
 package $organization$.$name;format="snake"$
 
-import #organization$.$name;format="snake"$.controllers.SampleController
+import $organization$.$name;format="snake"$.controllers.SampleController
 import org.scalatestplus.play.PlaySpec
 import play.api.mvc.{Result, Results}
 import play.api.test.Helpers._
