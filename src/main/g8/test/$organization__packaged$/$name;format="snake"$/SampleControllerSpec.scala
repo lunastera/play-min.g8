@@ -24,7 +24,7 @@ class SampleControllerSpec extends PlaySpec with Results {
     "クエリパラメータが存在しなかった場合にはエラーメッセージを返す" in {
       val result: Future[Result] = controller.get(None)(FakeRequest())
       val bodyText = contentAsString(result)
-      bodyText mustBe """Please give a name as a query parameter named "name"."""
+      bodyText mustBe """"name"パラメータを指定してください"""
     }
   }
 }

@@ -10,7 +10,7 @@ class SampleController @Inject()(c: ControllerComponents) extends AbstractContro
     Ok {
       name
         .map(s => s"Hello $"$"$s!")
-        .getOrElse("""Please give a name as a query parameter named "name".""")
+        .getOrElse(""""name"パラメータを指定してください""")
     }
   }
 }
