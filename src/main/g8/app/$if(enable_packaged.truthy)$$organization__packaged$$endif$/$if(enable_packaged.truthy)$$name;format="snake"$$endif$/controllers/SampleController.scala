@@ -1,4 +1,4 @@
-package $organization$.$name;format="snake"$.controllers
+package $if(enable_packaged.truthy)$$organization$.$name;format="snake"$.$endif$controllers
 
 import javax.inject.{Inject, Singleton}
 import play.api.mvc.{AbstractController, Request, AnyContent, ControllerComponents}

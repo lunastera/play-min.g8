@@ -1,6 +1,8 @@
-package $organization$.$name;format="snake"$
+$if(enable_packaged.truthy)$
+$"package "$$organization$.$name;format="snake" $
 
-import $organization$.$name;format="snake"$.controllers.SampleController
+$endif$
+import $if(enable_packaged.truthy)$$organization$.$name;format="snake"$.$endif$controllers.SampleController
 import org.scalatestplus.play.PlaySpec
 import play.api.mvc.{Result, Results}
 import play.api.test.Helpers._

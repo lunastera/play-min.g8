@@ -1,1 +1,1 @@
-GET		/		$organization$.$name;format="snake"$.controllers.SampleController.get(name: Option[String])
+GET		/		$if(enable_packaged.truthy)$$organization$.$name;format="snake"$.$endif$controllers.SampleController.get(name: Option[String])
